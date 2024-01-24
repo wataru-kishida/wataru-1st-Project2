@@ -49,6 +49,10 @@ public class WataruP1 extends JFrame implements ActionListener {
 		getContentPane().add(jpanel, BorderLayout.CENTER);
 		
 	}
+	
+	public void victory() {
+		
+	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
