@@ -59,6 +59,7 @@ public class WataruP1 extends JFrame implements ActionListener {
 		for(int i = 0; i < 9; i++) {
 			if(e.getSource() == oxs[i]) {
 				oxs[i].setText(checkTurn(count));
+				oxs[i].setEnabled(false);
 			}
 		}
 		count++;
