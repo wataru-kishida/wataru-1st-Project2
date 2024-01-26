@@ -50,8 +50,28 @@ public class WataruP1 extends JFrame implements ActionListener {
 		
 	}
 	
-	public void victory() {
+	public void checkVictory() {
 		
+	}
+	
+	public void checkColumns() {
+		for(int i = 0; i < 3; i++) {
+			if( oxs[i].getText().equals(oxs[i+3].getText()) && oxs[i].getText().equals(oxs[i+6].getText())
+				&& oxs[i].getText() != "-" ) {
+				System.out.println("i = i+3");
+			}
+		}
+	}
+	
+	public void checkRows() {
+		int i = 0;
+		for(int j = 0; j < 3; j++) {
+			if( oxs[i].getText().equals(oxs[i+1].getText()) && oxs[i].getText().equals(oxs[i+2].getText())
+				&& oxs[i].getText() != "-" ) {
+				System.out.println("i = i+1");
+			}
+			i += 3;
+		}
 	}
 
 	@Override
@@ -62,6 +82,9 @@ public class WataruP1 extends JFrame implements ActionListener {
 				oxs[i].setEnabled(false);
 			}
 		}
+		checkRows();
+		checkColumns();
+//		System.out.println( oxs[1].getText() );
 		count++;
 	}
 	

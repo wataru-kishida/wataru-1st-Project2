@@ -124,15 +124,15 @@ public class tttGame extends JPanel {
 		public boolean checkRows() {
 			int i = 0;
 			for(int j = 0;j<3;j++) {
-			if( buttons[i].getText().equals(buttons[i+1].getText()) && buttons[i].getText().equals(buttons[i+2].getText()) 
+				if( buttons[i].getText().equals(buttons[i+1].getText()) && buttons[i].getText().equals(buttons[i+2].getText()) 
 					&& buttons[i].getText().charAt(0) != '-') {
-				return true;
-			}
-			i = i+3;
+					return true;
+				}
+				i = i+3;
 			
-		}
+			}
 			return false;
-	}
+		}
 		
 		
 		// checks columns for a win
