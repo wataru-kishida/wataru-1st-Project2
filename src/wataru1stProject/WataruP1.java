@@ -82,6 +82,9 @@ public class WataruP1 extends JFrame implements ActionListener {
 				oxs[i].setEnabled(false);
 			}
 		}
+		
+//		(JButton)e.getSource().setText(checkTurn(count));
+		
 		checkRows();
 		checkColumns();
 //		System.out.println( oxs[1].getText() );
